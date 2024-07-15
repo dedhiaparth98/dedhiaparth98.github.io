@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes underline-slide {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .underline-animation {
+    position: relative;
+  }
+  
+  .underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust the height of the underline */
+    left: 0;
+    bottom: -5px; /* Adjust the position of the underline */
+    background-color: currentColor; /* Use the text color for the underline */
+    transition: width 0.3s ease; /* Adjust the duration of the animation */
+  }
+  
+  .underline-animation:hover::after {
+    width: 100%;
+    animation: underline-slide 0.3s ease forwards;
+  }
+
+  @layer base {
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('./Poppins-Regular.ttf') format('truetype');
+    }
+  }
