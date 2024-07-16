@@ -1,7 +1,7 @@
 {
   "name": "dedhiaparth98.github.io",
   "version": "0.1.0",
-  "homepage": "https://dedhiaparth98.github.io/dedhiaparth98.github.io",
+  "homepage": "https://dedhiaparth98.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
