@@ -6,15 +6,15 @@ export default function MediumBlog(props) {
     return (
         <Card className="p-0">
             <a href={url} target="_blank" rel='noreferrer'>
-                <div className='grid grid-cols-12 gap-6'>
-                    <div className="col-span-4 md:col-span-2">
-                        <img className="rounded-tl-lg rounded-bl-lg h-full" src={imageUrl} alt={title}/>
+                <div className='flex flex-col'>
+                    <div className="">
+                        <img className="rounded-tl-lg rounded-tr-lg h-full" src={imageUrl} alt={title}/>
                     </div>
-                    <div className="col-span-8 md:col-span-10 py-4 flex flex-col justify-center">
-                        <CardHeader className='truncate text-lg'>
+                    <div className="p-8 flex flex-col justify-center">
+                        <CardHeader className='text-lg'>
                             {title}
                         </CardHeader>
-                        <p className='truncate dark:text-gray-400 text-gray-800'>
+                        <p className='dark:text-gray-400 text-gray-800'>
                             {description}
                         </p>
                     </div>

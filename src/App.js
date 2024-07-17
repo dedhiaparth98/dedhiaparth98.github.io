@@ -24,10 +24,9 @@ export default function App() {
                 between your business needs and the latest advancements in technology,
                 like artificial intelligence (AI) and cloud computing.
               </p>
-              <Contact />
             </div>
             <div className='flex flex-col justify-center align-middle'>
-              <img src={Parth} alt='Parth Rajesh Dedhia' className='rounded-full mx-auto block md:w-2/3 w-1/2'></img>
+              <img src={Parth} alt='Parth Rajesh Dedhia' className='rounded-full mx-auto block md:w-2/3 w-5/6'></img>
             </div>
           </div>
         </Section>
@@ -60,7 +59,7 @@ export default function App() {
 
         <Section id='blogs'>
           <H2 className='mb-6'>Blogs</H2>
-          <div className='flex flex-col gap-6'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
             <MediumBlog
               imageUrl='https://miro.medium.com/v2/resize:fit:1100/format:webp/0*feME8KHgrReOTvBU'
               title='Building Face Recognition Model Under 30 Minutes'
@@ -86,12 +85,6 @@ export default function App() {
               description='SPPNet allows variable size input image to CNN and can be used for Classification and Object Detection'
             />
             <MediumBlog
-              url='https://medium.com/towards-data-science/understanding-fast-rcnn-for-object-detection-7a1c3f63fc66'
-              imageUrl='https://miro.medium.com/v2/resize:fit:1100/format:webp/1*nX-LomXmIT-yRrENCb685g.jpeg'
-              title='Understanding Fast-RCNN for Object Detection'
-              description='The fast-RCNN paper highlights the drawbacks of SPPNet and RCNN, and build a relatively fast and accurate model'
-            />
-            <MediumBlog
               url='https://medium.com/towards-data-science/faster-r-cnn-a-step-towards-real-time-object-detection-98c186732a69'
               imageUrl='https://miro.medium.com/v2/resize:fit:1100/format:webp/0*A3mhbsGA8JPSi4Ku'
               title='Faster R-CNN: A Step towards Real-Time object Detection'
@@ -103,9 +96,19 @@ export default function App() {
               title='Implementing Spatial Transformer Network (STN) in TensorFlow'
               description='Spatial Transformer Networks (STN) is a differentiable module that can be inserted between convolution layers to provide Equivariance to the image or features.'
             />
+            <MediumBlog
+              url='https://medium.com/towards-data-science/understanding-fast-rcnn-for-object-detection-7a1c3f63fc66'
+              imageUrl='https://miro.medium.com/v2/resize:fit:1100/format:webp/1*nX-LomXmIT-yRrENCb685g.jpeg'
+              title='Understanding Fast-RCNN for Object Detection'
+              description='The fast-RCNN paper highlights the drawbacks of SPPNet and RCNN, and build a relatively fast and accurate model'
+            />
           </div>
         </Section>
-        <footer className='text-center py-8 text-sm'>
+        <Section id="contact">
+          <H2 className='mb-6'>Contact Me</H2>
+          <Contact />
+        </Section>
+        <footer className='text-center py-8 mt-24 text-sm'>
           <a href='#' className='underline-animation'>Parth Rajesh Dedhia</a> © 2024
         </footer>
       </div>
